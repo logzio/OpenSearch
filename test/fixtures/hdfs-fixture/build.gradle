@@ -79,7 +79,7 @@ dependencies {
   api 'org.apache.zookeeper:zookeeper:3.9.5'
   api "org.apache.commons:commons-text:1.15.0"
   api "commons-net:commons-net:3.12.0"
-  api "ch.qos.logback:logback-core:1.5.32"
+  api "ch.qos.logback:logback-core:1.5.35"
   api "ch.qos.logback:logback-classic:1.5.32"
   api "org.jboss.xnio:xnio-nio:3.8.17.Final"
   api 'org.jline:jline:4.0.0'
@@ -96,3 +96,4 @@ dependencies {
   runtimeOnly "com.squareup.okio:okio:3.16.4"
   runtimeOnly "org.xerial.snappy:snappy-java:1.1.10.8"
 }
+
