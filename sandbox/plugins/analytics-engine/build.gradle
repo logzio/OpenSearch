@@ -79,7 +79,7 @@ dependencies {
   // buffers (see FastLz4CompressionCodec) — same on-wire LZ4 frame format, native speed.
   implementation "org.apache.arrow:arrow-compression:${versions.arrow}"
   implementation "org.apache.commons:commons-compress:${versions.commonscompress}"
-  implementation "org.lz4:lz4-java:1.8.0"
+  implementation "org.lz4:lz4-java:1.8.1"
 
   implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:${versions.jackson}") {
     exclude group: 'com.fasterxml.jackson.core'
@@ -272,3 +272,4 @@ internalClusterTest {
   systemProperty 'io.netty.tryUnsafe', 'true'
   systemProperty 'io.netty.tryReflectionSetAccessible', 'true'
 }
+
