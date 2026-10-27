@@ -59,7 +59,7 @@ dependencies {
   runtimeOnly "io.grpc:grpc-protobuf:${versions.grpc}"
 
   runtimeOnly "com.google.guava:failureaccess:1.0.2"
-  runtimeOnly('com.google.guava:guava:33.3.1-jre') {
+  runtimeOnly('com.google.guava:guava:33.7.2') {
     attributes {
       attribute(Attribute.of('org.gradle.jvm.environment', String), 'standard-jvm')
     }
@@ -218,3 +218,4 @@ tasks.named('thirdPartyAudit').configure {
     'com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper$1'
   )
 }
+
