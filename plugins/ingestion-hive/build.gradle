@@ -68,7 +68,7 @@ dependencies {
 
   // Parquet reader (bundle includes all parquet modules in one jar, avoids jar hell)
   api "org.apache.parquet:parquet-hadoop-bundle:${versions.parquetHadoop}"
-  runtimeOnly "org.xerial.snappy:snappy-java:1.1.10.7"
+  runtimeOnly "org.xerial.snappy:snappy-java:1.1.10.9"
 
   // SLF4J required by Hadoop Configuration class initializer
   api "org.slf4j:slf4j-api:${versions.slf4j}"
@@ -198,3 +198,4 @@ tasks.named('forbiddenApisMain').configure {
 tasks.named("dependencyLicenses").configure {
   mapping from: /hadoop-.*/, to: 'hadoop'
 }
+
