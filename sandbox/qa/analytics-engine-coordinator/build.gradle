@@ -69,8 +69,8 @@ dependencies {
   // be on the test runtime classpath here. Calcite's FrameworkConfig also
   // references ImmutableList in its compile-time API (SqlPlanRunner imports
   // it), so include Guava on the IT compile classpath too.
-  internalClusterTestCompileOnly "com.google.guava:guava:33.3.1-jre"
-  internalClusterTestRuntimeOnly "com.google.guava:guava:33.3.1-jre"
+  internalClusterTestCompileOnly "com.google.guava:guava:33.7.2"
+  internalClusterTestRuntimeOnly "com.google.guava:guava:33.7.2"
   internalClusterTestRuntimeOnly "com.google.guava:failureaccess:1.0.1"
 }
 
@@ -162,3 +162,4 @@ internalClusterTest {
   systemProperty 'native.lib.path', project(':sandbox:libs:dataformat-native').ext.nativeLibPath.absolutePath
   dependsOn ':sandbox:libs:dataformat-native:buildRustLibrary'
 }
+
