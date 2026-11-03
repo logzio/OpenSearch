@@ -98,7 +98,7 @@ dependencies {
   testImplementation "org.apache.kerby:kerb-core:2.0.3"
   testImplementation "org.apache.kerby:kerby-pkix:2.0.3"
   testImplementation "org.apache.kerby:kerby-xdr:2.0.3"
-  testImplementation "org.apache.kerby:kerby-asn1:2.0.3"
+  testImplementation "org.apache.kerby:kerby-asn1:2.1.2"
   testImplementation "org.apache.kerby:kerby-util:2.0.3"
 }
 
@@ -198,3 +198,4 @@ tasks.named('forbiddenApisMain').configure {
 tasks.named("dependencyLicenses").configure {
   mapping from: /hadoop-.*/, to: 'hadoop'
 }
+
